@@ -1,15 +1,27 @@
-import { User } from 'lucide-react';
+import { User, LogOut } from 'lucide-react';
 import { Button } from './ui/button';
 import { useState } from 'react';
 import { UserDashboard } from './UserDashboard';
+import { VendorDashboard } from './VendorDashboard';
 
-export function Header() {
+interface HeaderProps {
+  userType?: 'customer' | 'vendor';
+  onLogout?: () => void;
+}
+
+export function Header({ userType = 'customer', onLogout }: HeaderProps) {
   const [showDashboard, setShowDashboard] = useState(false);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+  const handleLogout = () => {
+    if (onLogout) {
+      onLogout();
     }
   };
 
@@ -57,12 +69,27 @@ export function Header() {
               >
                 My Account
               </button>
+              <button
+                onClick={handleLogout}
+                className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-lg transition-colors"
+              >
+                <LogOut className="w-4 h-4" />
+                Logout
+              </button>
             </nav>
           </div>
         </div>
       </header>
 
-      <UserDashboard isOpen={showDashboard} onClose={() => setShowDashboard(false)} />
+      {userType === 'customer' ? (
+        <UserDashboard isOpen={showDashboard} onClose={() => setShowDashboard(false)} />
+      ) : (
+        <VendorDashboard 
+          isOpen={showDashboard} 
+          onClose={() => setShowDashboard(false)}
+          onLogout={handleLogout}
+        />
+      )}
     </>
   );
 }

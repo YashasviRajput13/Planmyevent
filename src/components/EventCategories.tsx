@@ -107,13 +107,13 @@ const EVENT_CATEGORIES: EventCategory[] = [
   },
   {
     title: 'Fashion Shows',
-    image: 'https://images.unsplash.com/photo-1558769132-cb1aea1f1c73',
+    image: 'https://images.unsplash.com/photo-1762430815620-fcca603c240c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXNoaW9uJTIwcnVud2F5JTIwc2hvd3xlbnwxfHx8fDE3NjQyNDU1NjB8MA&ixlib=rb-4.1.0&q=80&w=1080',
     vendors: [
-      { name: 'Runway Photographers', image: 'https://images.unsplash.com/photo-1558769132-cb1aea1f1c73' },
+      { name: 'Runway Photographers', image: 'https://images.unsplash.com/photo-1762430815620-fcca603c240c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXNoaW9uJTIwcnVud2F5JTIwc2hvd3xlbnwxfHx8fDE3NjQyNDU1NjB8MA&ixlib=rb-4.1.0&q=80&w=1080' },
       { name: 'Fashion Videographers', image: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4' },
       { name: 'Makeup Artists', image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9' },
       { name: 'Hair Stylists', image: 'https://images.unsplash.com/photo-1562322140-8baeececf3df' },
-      { name: 'Runway Setup', image: 'https://images.unsplash.com/photo-1558769132-cb1aea1f1c73' },
+      { name: 'Runway Setup', image: 'https://images.unsplash.com/photo-1762430815620-fcca603c240c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXNoaW9uJTIwcnVud2F5JTIwc2hvd3xlbnwxfHx8fDE3NjQyNDU1NjB8MA&ixlib=rb-4.1.0&q=80&w=1080' },
       { name: 'Fashion Show DJs', image: 'https://images.unsplash.com/photo-1571266028243-d220c6b2c720' },
     ],
   },
