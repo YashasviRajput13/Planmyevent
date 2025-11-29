@@ -1,7 +1,7 @@
 
   # Dynamic Event Planning Website (Community)
 
-  This is a code bundle for Dynamic Event Planning Website (Community). The original project is available at https://www.figma.com/design/KQa7zpihoiJrrNQhJwvqnK/Dynamic-Event-Planning-Website--Community-.
+  https://planmyevent.vercel.app/
 
   ## Running the code
 
